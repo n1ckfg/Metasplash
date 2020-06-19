@@ -11,9 +11,9 @@ class Rain {
   }
 
   void draw() {
-    stroke(100,col);
-    strokeWeight(2);
-    line(position.x,position.y,pposition.x,pposition.y);
+    tex.stroke(0,50,100,col);
+    tex.strokeWeight(2);
+    tex.line(position.x,position.y,pposition.x,pposition.y);
   }
 
   void calculate() {
@@ -29,4 +29,3 @@ class Rain {
   
 }
  
-

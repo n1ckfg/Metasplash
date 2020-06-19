@@ -12,10 +12,10 @@ class Splash {
   }
 
   void draw() {
-    strokeWeight(1);
-    stroke(100,50);
-    fill(100,100);
-    ellipse(position.x,position.y,2,2);
+    tex.strokeWeight(1);
+    tex.stroke(0,50,100,50);
+    tex.fill(100,100);
+    tex.ellipse(position.x,position.y,2,2);
   }
 
   void calculate() {

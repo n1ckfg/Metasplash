@@ -15,10 +15,13 @@ void setup() {
   background(0);
 
   rain.add(new Rain());
+  bloomSetup();
 }
  
 void draw() {
-  blur(50);
+  tex.beginDraw();
+  tex.background(0);
+  //blur(50);
   lightning();
    
   if (random(0, 10) > 9.9 && rain.size()<4) {
@@ -72,6 +75,9 @@ void draw() {
       splash.remove(i);
     }
   }
+  tex.endDraw();
+  
+  bloomDraw();
   
   surface.setTitle("" + frameRate);
 }
